@@ -18,8 +18,6 @@ class Window(Tk):
         self.minsize(400,400)
         self.wm_iconbitmap('kirbyicon.ico')
         self.config(bg='orange')
-
-        self.background_image()
         
         self.siteused()
 
