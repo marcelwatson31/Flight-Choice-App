@@ -29,9 +29,7 @@ class Window(Tk):
 
         self.submit_button()
 
-        
-
-        
+             
 
     def siteused(self):
         site = Label(self, text = "Powered by: Expedia", font = "Times" )
@@ -98,11 +96,7 @@ class Window(Tk):
         search_button = browser.find_element_by_xpath('//*[@id="gcw-flights-form-hp-flight"]/div[8]/label/button')
         search_button.send_keys(Keys.ENTER)
 
-    def background_image(self):
-        C = Canvas(top, bg="blue", height=250, width=300)
-        filename = PhotoImage(file = "Chrollo.png")
-        background_label = Label(top, image=filename)
-        background_label.place(x=0, y=0, relwidth=1, relheight=1)
+
 
 window = Window()
 window.mainloop()
